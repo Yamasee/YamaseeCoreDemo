@@ -14,23 +14,23 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		aa8mXuFdL5R80waxwaG6IJgBUYc=
+		Iqgsi2pPQ8eqZddvpACrvZ5knzk=
 		</data>
 		<key>Modules/Yamasee.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		YQ0s8bRuFkTbFZITcQ26vDkxeJQ=
+		tHkAGRxE65LbA45BpRdC3/qHnkA=
 		</data>
 		<key>Modules/Yamasee.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		2YZBlZH0sve+CNZkz74t5fOBbJ0=
+		2y7olhxUWGpppxRglVwO2QT4kvw=
 		</data>
 		<key>Modules/Yamasee.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		YQ0s8bRuFkTbFZITcQ26vDkxeJQ=
+		tHkAGRxE65LbA45BpRdC3/qHnkA=
 		</data>
 		<key>Modules/Yamasee.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		2YZBlZH0sve+CNZkz74t5fOBbJ0=
+		2y7olhxUWGpppxRglVwO2QT4kvw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -61,28 +61,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			YprGP83enF81+QYhiNwoarFTDyhHSJwGJJittUZoOF8=
+			9h4yjZnXv7c79dCg6D6ZgSacDVp/J3oJXwglQ3cZvh0=
 			</data>
 		</dict>
 		<key>Modules/Yamasee.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0e4XDwwqeEsNiP7/IBR7MLAb7RKNkMMFuEvv84tJA20=
+			9eNh9wxMmRvI4C+i4UPGIPEWVK1xCddipt8JEag9xiE=
 			</data>
 		</dict>
 		<key>Modules/Yamasee.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			YprGP83enF81+QYhiNwoarFTDyhHSJwGJJittUZoOF8=
+			9h4yjZnXv7c79dCg6D6ZgSacDVp/J3oJXwglQ3cZvh0=
 			</data>
 		</dict>
 		<key>Modules/Yamasee.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0e4XDwwqeEsNiP7/IBR7MLAb7RKNkMMFuEvv84tJA20=
+			9eNh9wxMmRvI4C+i4UPGIPEWVK1xCddipt8JEag9xiE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

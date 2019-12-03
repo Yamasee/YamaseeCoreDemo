@@ -29,6 +29,9 @@ class ViewController: UIViewController, YamaseeCoreDelegate {
             print (success ? "logged in" : error!)
         }
         
+        // 3.1 set flight number
+        YM.setFlightNumber(flightNumber: "LY001")
+        
         //4. optional - get aircraft types
         let aircrafts: Array<YamaseeAircraftType> = YM.getAircraftTypes()
         aircrafts.forEach { (aircraft) in
