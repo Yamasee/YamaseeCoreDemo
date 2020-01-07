@@ -61,9 +61,14 @@ extension ViewController {
         print ("New Turbulence data from server @ \(Date(timeIntervalSince1970: TimeInterval(serverUpdateTime)))")
         
         // 9. query turbulence to draw on map
-        let turbulenceJSON = YamaseeCore.shared.getTurbulence(minAlt: Measurement.init(value: 20000, unit: .feet), maxAlt: Measurement.init(value: 22000, unit: .feet), timeSpan: 120, zoomLevel: 1)
-        
+        let turbulenceJSON = YamaseeCore.shared.getTurbulenceGeoJson(altRange: Measurement.init(value: 20000, unit: UnitLength.feet)...Measurement.init(value: 22000, unit: UnitLength.feet), timeSpan: 60, zoomLevel: 1)
+  
         print(turbulenceJSON.prefix(1000))
+        
+        // 9. query turbulence to draw on map
+        let turbulenceItems = YamaseeCore.shared.getTurbulence(altRange: Measurement.init(value: 20000, unit: UnitLength.feet)...Measurement.init(value: 22000, unit: UnitLength.feet), timeSpan: 60, zoomLevel: 1)
+        
+        print(turbulenceItems)
     }
     
     
@@ -73,7 +78,7 @@ extension ViewController {
         print ("New Traffic data from server @ \(Date(timeIntervalSince1970: TimeInterval(serverUpdateTime)))")
         
         // 11. query traffic to draw on map
-        let traffic = YM.getTraffic(minAlt: Measurement.init(value: 10000, unit: .feet), maxAlt: Measurement.init(value: 35000, unit: .feet))
+        let traffic = YM.getTraffic(altRange: Measurement.init(value: 20000, unit: UnitLength.feet)...Measurement.init(value: 52000, unit: UnitLength.feet))
         
         print (traffic.count > 10 ? traffic[1...10] : traffic)
         
