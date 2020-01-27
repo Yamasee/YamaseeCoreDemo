@@ -21,7 +21,7 @@ class ViewController: UIViewController, YamaseeCoreDelegate {
         YM.delegate = self
         
         // 2. call start with api key and baseUrl. if you use proxy
-        YM.start(apiKey: "xxx-xxx", baseUrl: "https://server.yamasee-skypath.com")
+        YM.start(apiKey: "xxx-xxx", baseUrl: "https://devserver.yamasee-skypath.com")
         
         // 3. login to yamasee server
         YM.login(userId: "e010002", aircraft: "787") { (success, error) in
@@ -39,7 +39,7 @@ class ViewController: UIViewController, YamaseeCoreDelegate {
         }
         
         //5. get Alert - usually when aircraft position changed (mock)
-        let alert = YM.getAlert(lat: 30.4, long: 34.1, altitude: Measurement.init(value: 35000, unit: .feet), heading: Measurement.init(value: 259, unit: .degrees))
+        let alert = YM.getAlert(lat: 30.4, long: 34.1, altitude: Measurement.init(value: 35000, unit: .feet), heading: Measurement.init(value: 259, unit: .degrees), timeSpan: 120)
         
         print (alert)
         
