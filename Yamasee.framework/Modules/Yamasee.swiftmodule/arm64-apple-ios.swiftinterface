@@ -7,7 +7,10 @@ import Foundation
 import Swift
 import UIKit
 @_exported import Yamasee
-public enum TurbulenceSeverity : Swift.Int, Swift.Comparable, Swift.Equatable, Swift.Decodable {
+public class Storage {
+  @objc deinit
+}
+public enum TurbulenceSeverity : Swift.Int, Swift.Comparable, Swift.Equatable, Swift.Codable {
   case None
   case Light
   case LightModarate
@@ -24,7 +27,7 @@ extension TurbulenceSeverity {
   public static func < (lhs: Yamasee.TurbulenceSeverity, rhs: Yamasee.TurbulenceSeverity) -> Swift.Bool
 }
 public struct TurbulenceItem {
-  public let sev: Yamasee.TurbulenceSeverity
+  public let sev: Swift.Double
   public let bbox: [CoreLocation.CLLocationCoordinate2D]
 }
 public enum YamaseeCoreNotifications : Swift.Error {
@@ -35,13 +38,17 @@ public enum YamaseeCoreNotifications : Swift.Error {
   }
   public func hash(into hasher: inout Swift.Hasher)
 }
+public struct TempDataTurbulences : Swift.Codable {
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+}
 public enum YamaseeLoginErros : Swift.Error {
-  case aircraftParamError
   case timeOut
   case userIdParamError
-  case userNotAutorized
+  case copmanyIdError
   case userNotFound
   case apiKeyNotValid
+  case unableToLogin
   public static func == (a: Yamasee.YamaseeLoginErros, b: Yamasee.YamaseeLoginErros) -> Swift.Bool
   public var hashValue: Swift.Int {
     get
@@ -58,7 +65,7 @@ public class YamaseeCore {
   public static let shared: Yamasee.YamaseeCore
   weak public var delegate: Yamasee.YamaseeCoreDelegate?
   public func start(apiKey: Swift.String, baseUrl: Swift.String)
-  public func login(userId: Swift.String, aircraft: Swift.String, completionHandler: @escaping (Swift.Bool, Yamasee.YamaseeLoginErros?) -> Swift.Void)
+  public func partnerLogin(userId: Swift.String, companyId: Swift.String, completionHandler: @escaping (Swift.Bool, Yamasee.YamaseeLoginErros?) -> Swift.Void)
   public func logout()
   public func getTurbulenceGeoJson(altRange: Swift.ClosedRange<Foundation.Measurement<Foundation.UnitLength>>, timeSpan: Swift.Int, zoomLevel: Swift.Int) -> Swift.String
   public func getTurbulence(altRange: Swift.ClosedRange<Foundation.Measurement<Foundation.UnitLength>>, timeSpan: Swift.Int, zoomLevel: Swift.Int) -> [Yamasee.TurbulenceItem]

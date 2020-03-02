@@ -21,13 +21,12 @@ class ViewController: UIViewController, YamaseeCoreDelegate {
         YM.delegate = self
         
         // 2. call start with api key and baseUrl. if you use proxy
-        YM.start(apiKey: "xxx-xxx", baseUrl: "https://devserver.yamasee-skypath.com")
+        YM.start(apiKey: "b523bc5ce5747750804650e26ce6ee5f", baseUrl: "https://devserver.yamasee-skypath.com")
         
         // 3. login to yamasee server
-        YM.login(userId: "e010002", aircraft: "787") { (success, error) in
-          
-            print (success ? "logged in" : error!)
-        }
+        YM.partnerLogin(userId: "e010002", companyId: "YS", completionHandler: { (success, error) in
+                     print("login \(success)")
+                 })
         
         // 3.1 set flight number
         YM.setFlightNumber(flightNumber: "LY001")
