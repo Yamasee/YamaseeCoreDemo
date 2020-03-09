@@ -7,9 +7,6 @@ import Foundation
 import Swift
 import UIKit
 @_exported import Yamasee
-public class Storage {
-  @objc deinit
-}
 public enum TurbulenceSeverity : Swift.Int, Swift.Comparable, Swift.Equatable, Swift.Codable {
   case None
   case Light
@@ -27,7 +24,7 @@ extension TurbulenceSeverity {
   public static func < (lhs: Yamasee.TurbulenceSeverity, rhs: Yamasee.TurbulenceSeverity) -> Swift.Bool
 }
 public struct TurbulenceItem {
-  public let sev: Swift.Double
+  public let sev: Yamasee.TurbulenceSeverity
   public let bbox: [CoreLocation.CLLocationCoordinate2D]
 }
 public enum YamaseeCoreNotifications : Swift.Error {
@@ -37,10 +34,6 @@ public enum YamaseeCoreNotifications : Swift.Error {
     get
   }
   public func hash(into hasher: inout Swift.Hasher)
-}
-public struct TempDataTurbulences : Swift.Codable {
-  public init(from decoder: Swift.Decoder) throws
-  public func encode(to encoder: Swift.Encoder) throws
 }
 public enum YamaseeLoginErros : Swift.Error {
   case timeOut
@@ -99,5 +92,4 @@ extension Yamasee.TurbulenceSeverity : Swift.Hashable {}
 extension Yamasee.TurbulenceSeverity : Swift.RawRepresentable {}
 extension Yamasee.YamaseeCoreNotifications : Swift.Equatable {}
 extension Yamasee.YamaseeCoreNotifications : Swift.Hashable {}
-extension Yamasee.YamaseeLoginErros : Swift.Equatable {}
 extension Yamasee.YamaseeLoginErros : Swift.Hashable {}

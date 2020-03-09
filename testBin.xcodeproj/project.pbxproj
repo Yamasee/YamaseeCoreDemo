@@ -15,8 +15,8 @@
 		A5177BCE23943A5900E16736 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5177BCC23943A5900E16736 /* LaunchScreen.storyboard */; };
 		A5177BD923943A5900E16736 /* testBinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5177BD823943A5900E16736 /* testBinTests.swift */; };
 		A538662023963DD400222575 /* AppLevelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A538661F23963DD400222575 /* AppLevelView.swift */; };
-		A5C5C513240DD25A00ED2D51 /* Yamasee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5C5C511240DD25700ED2D51 /* Yamasee.framework */; };
-		A5C5C514240DD25A00ED2D51 /* Yamasee.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A5C5C511240DD25700ED2D51 /* Yamasee.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A579B6CD2416DEF3003FB2CB /* Yamasee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A579B6CB2416DEEC003FB2CB /* Yamasee.framework */; };
+		A579B6CE2416DEF3003FB2CB /* Yamasee.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A579B6CB2416DEEC003FB2CB /* Yamasee.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				A5C5C514240DD25A00ED2D51 /* Yamasee.framework in Embed Frameworks */,
+				A579B6CE2416DEF3003FB2CB /* Yamasee.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -56,7 +56,7 @@
 		A5177BD823943A5900E16736 /* testBinTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testBinTests.swift; sourceTree = "<group>"; };
 		A5177BDA23943A5900E16736 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A538661F23963DD400222575 /* AppLevelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLevelView.swift; sourceTree = "<group>"; };
-		A5C5C511240DD25700ED2D51 /* Yamasee.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Yamasee.framework; sourceTree = "<group>"; };
+		A579B6CB2416DEEC003FB2CB /* Yamasee.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Yamasee.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5C5C513240DD25A00ED2D51 /* Yamasee.framework in Frameworks */,
+				A579B6CD2416DEF3003FB2CB /* Yamasee.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,7 +124,7 @@
 		A5177BF623945FB100E16736 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A5C5C511240DD25700ED2D51 /* Yamasee.framework */,
+				A579B6CB2416DEEC003FB2CB /* Yamasee.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -395,7 +395,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = KHHS9DZ583;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -420,7 +420,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = KHHS9DZ583;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

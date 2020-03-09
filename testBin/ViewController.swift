@@ -66,7 +66,7 @@ extension ViewController {
         
         // 9. query turbulence to draw on map
         let turbulenceItems = YamaseeCore.shared.getTurbulence(altRange: Measurement.init(value: 20000, unit: UnitLength.feet)...Measurement.init(value: 22000, unit: UnitLength.feet), timeSpan: 60, zoomLevel: 1)
-        
+   
         print(turbulenceItems)
     }
     
