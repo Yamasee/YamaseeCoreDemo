@@ -74,6 +74,10 @@ public class YamaseeCore {
   public func getAircraftTypes() -> [Yamasee.YamaseeAircraftType]
   @objc deinit
 }
+extension YamaseeCore {
+  public func setSimulatorMode(isLocationSimulatorOn: Swift.Bool)
+  public func simulatedLocation(location: CoreLocation.CLLocation)
+}
 public struct YamaseeAircraftType {
   public var aircraft: Swift.String
   public var description: Swift.String
@@ -92,4 +96,5 @@ extension Yamasee.TurbulenceSeverity : Swift.Hashable {}
 extension Yamasee.TurbulenceSeverity : Swift.RawRepresentable {}
 extension Yamasee.YamaseeCoreNotifications : Swift.Equatable {}
 extension Yamasee.YamaseeCoreNotifications : Swift.Hashable {}
+extension Yamasee.YamaseeLoginErros : Swift.Equatable {}
 extension Yamasee.YamaseeLoginErros : Swift.Hashable {}
